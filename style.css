@@ -1,0 +1,1575 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+body{
+    font-family: 'Nunito', sans-serif; 
+    scroll-behavior: smooth;
+    
+    overflow-y:scroll;
+}
+
+
+.containerm{
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+}
+
+header{
+    min-height: 10vh;
+
+}
+
+header{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0px;
+    background: white;
+}
+
+nav{
+    min-height: 10vh;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.burger{display: none;}
+
+nav h2{
+    display: none;
+    font-weight: 300;
+    margin-left: 0px;
+}
+
+header h1, ul{
+    font-size: 1.5rem;
+}
+
+nav h1, nav ul{
+    font-size: 1.5rem;
+    flex: 1;
+    align-items: center;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.join{
+    padding: 7px 25px 7px 25px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 120px;
+    background: linear-gradient(to right,  #15b6b6 , #0a9774,  #1ab98f  );
+    background-size: cover;
+    scroll-snap-align: start;
+}
+#home p{
+    font-weight: 350;
+    font-size: larger;
+    padding-right: 500px;
+    color: white;
+}
+
+.hid{
+    display: none;
+}
+
+#home h2{
+    font-size: 3rem;
+    padding-right: 50px;
+    color:  #ffd2d2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.what{
+    display: block;
+}
+
+#about{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(241, 236, 236);
+    background: url(./imgs/istockphoto-1177980696-612x612.jpg) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+.d1{
+    flex: 1;
+}
+
+.jvc{
+    flex: 0.2;
+}
+
+.d3{
+    flex: 1;
+}
+
+.what , .mission , .service, .how{
+    margin: 30px 50px 20px 50px;
+    border: 2px solid black;
+    padding: 10px 10px;
+}
+
+.mission, .how{
+    margin-top: 100px;
+}
+
+.jvc{
+    padding-left: 40px;
+    font-size: 3rem;
+}
+
+.what h2, .mission h2, .service h2, .how h2{
+    margin-bottom: 40px;
+    text-decoration: underline;
+    text-decoration-color: rgb(28, 202, 202);
+    text-decoration-thickness: 3px;
+}
+
+#events{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    scroll-snap-align: start;
+}
+
+.e1,.e2,.e3{
+    border: 2px solid whitesmoke;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.e1 h2,.e2 h2,.e3 h2{
+    margin: 20px;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.e1 p,.e2 p,.e3 p{
+    margin: 25px;
+    font-size: larger;
+}
+
+.e1 h4,.e2 h4,.e3 h4{
+    margin: 15px;
+    margin-left: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.e1 a,.e2 a,.e3 a{
+    font-size: 1.2rem;
+    margin: 25px;
+    padding: 5px;
+    font-weight: 450;
+    color:#97F0D2;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding-left: 25px;
+    margin-top: 40px;
+    padding-right: 25px;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+.more{
+   height: 50px;
+   width: 100px;
+}
+
+.container{
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+#faqs{
+    background: url(./imgs/background-clean.jpg);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+body{
+    font-family: sans-serif;
+}
+
+button.accordian{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.2s linear;
+    font-size: 2rem;
+}
+
+button.accordian::after{
+    content: '\f055';
+    font-family: "fontawesome";
+    font-size: 14px;
+    float: right;
+}
+
+.d4{
+    display: none;
+}
+
+button.accordian.is-open::after{
+    content: "\f056";
+}
+
+button.accordian:hover, button.accordian.is-open{
+    background-color: rgb(136, 133, 133);
+}
+
+.accordian-content{
+    padding: 1px 20px;
+    border-left: 0px solid whitesmoke;
+    border-right: 0px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    font-size: 1.3rem;
+}
+
+  
+
+#join{
+    background: url(./imgs/white-background-with-black-line.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+
+}
+
+#join h2{
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    font-weight: 100;
+    
+}
+
+#join p{
+    font-size: larger;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: 300;
+}
+#join a{
+    margin-left: 70px;
+    margin-top: 70px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    position: absolute;
+    top: 475%;
+    right: 40vw;
+    
+
+}
+
+footer{
+    height: 10vh;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width:768px) {
+
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 2rem;
+        margin-left: 50px;
+    }
+
+    #home p{
+        padding-right: 40px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+ 
+
+
+    .what,.mission,.service,.how{
+        padding-bottom: 10px;
+        margin-top: 30px;
+        
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2,.e3{
+        height: 220px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 50%;
+    }
+
+    
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.2rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 415px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.922rem;
+        margin-left: 0px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 40px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 10px;
+        margin-top: 30px;
+        
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d4 {
+        display: inline;
+        margin-top: 1px;
+        padding-left: 0px;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.5rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: large;
+    }
+
+    .e3{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 376px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.61rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 40px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 10px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d4 {
+        display: inline;
+        margin-top: 1px;
+        padding-left: 0px;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.5rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: large;
+    }
+
+    .e3{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 361px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.5rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 20px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d4 {
+        display: inline;
+        margin-top: 1px;
+        padding-left: 0px;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.5rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: large;
+    }
+
+    .e3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 307px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.2rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 19px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d4 {
+        display: inline;
+        margin-top: 1px;
+        padding-left: 0px;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    .e3{
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1493px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 3rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 19px;
+    }
+
+    #about{
+        flex-direction: row;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.5rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: larger;
+    }
+
+    .e3{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (max-width: 523px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.2rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 19px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .all{
+        display: none;
+    }
+
+    .d4 {
+        display: inline;
+        margin-top: 1px;
+        padding-left: 0px;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 15px;
+    }
+
+    .e3{
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.2rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 19px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.5rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: larger;
+    }
+
+    .e3{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.32rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.3rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 1rem
+    }
+
+    .e3{
+        display: none;
+    }
+
+}
+
+
+
+@media screen and (max-width: 366px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+       position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 90px;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav h2{
+        display: block;
+    }
+
+    nav img{
+        display: none;
+    }
+
+    .nav-links li{
+        opacity: 0;
+    }
+
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
+
+    #home{
+        flex-direction: column;
+    }
+
+    #home h2{
+        font-size: 1.32rem;
+        margin-left: 20px;
+        font-weight: 700;
+    }
+
+    #home p{
+        padding-right: 0px;
+        font-size: 15px;
+    }
+
+    #about{
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .jvc{
+        font-size: 1.5rem;
+        padding-right: 150px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .service{
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .d2{
+        margin: 10px;
+        padding:0px;
+        height: 10px;
+    }
+
+    .what,.mission,.service,.how{
+        padding-bottom: 2px;
+        margin-top: 30px;
+        
+    }
+
+    .what h2,.mission h2,.service h2,.how h2{
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+    }
+    #events{
+        flex-direction: column;
+    }
+
+    .e1,.e2{
+        height: 50%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 2px;
+        margin-right: 2px;
+        width: 100%;;
+    }
+
+    .e1 h2,.e2 h2,.e3 h2{
+        font-size: 1.3rem;
+    }
+
+    .e1 p,.e2 p,.e3 p{
+        margin: 15px;
+        font-size: 1rem
+    }
+
+    .e3{
+        display: none;
+    }
+
+    .hid{
+        display: block;
+    }
+
+    .act{
+        display: none;
+    }
+
+}
+
+
+
+.nav-active{
+    transform: translateX(0%);
+
+}  
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.toggle .line2{
+    opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+@media screen and (max-width:768px) {}
