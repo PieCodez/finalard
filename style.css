@@ -19,10 +19,7 @@ body{
 }
 
 
-.containerm{
-    overflow-x: hidden;
-    scroll-snap-type: y mandatory;
-}
+
 
 header{
     min-height: 10vh;
@@ -94,7 +91,6 @@ section{
     padding-top: 120px;
     background: linear-gradient(to right,  #15b6b6 , #0a9774,  #1ab98f  );
     background-size: cover;
-    scroll-snap-align: start;
 }
 #home p{
     font-weight: 350;
@@ -349,9 +345,14 @@ footer{
 @media screen and (max-width:768px) {
 
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -460,9 +461,14 @@ footer{
 
 @media screen and (max-width: 415px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -579,9 +585,14 @@ footer{
 
 @media screen and (max-width: 376px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -702,9 +713,14 @@ footer{
 
 @media screen and (max-width: 361px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -823,9 +839,14 @@ footer{
 
 @media screen and (max-width: 307px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -953,9 +974,14 @@ footer{
 
 @media screen and (max-width: 1493px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -1068,9 +1094,14 @@ footer{
 
 @media screen and (max-width: 523px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -1192,9 +1223,14 @@ footer{
 
 @media screen and (max-width: 1000px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -1306,9 +1342,14 @@ footer{
 
 @media screen and (max-width: 1000px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
@@ -1421,9 +1462,14 @@ footer{
 
 @media screen and (max-width: 366px) {
 
-    body{
+    .containerm{
         overflow-x: hidden;
     }
+
+    header{
+        overflow-x: hidden;
+    }
+
     nav ul{
        position: absolute;
         right: 0;
