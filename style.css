@@ -321,10 +321,9 @@ button.accordian:hover, button.accordian.is-open{
     text-decoration: none;
     border: 2px solid black;
     color: black;
-    position: absolute;
-    top: 475%;
-    right: 40vw;
-    
+    width: 150px;
+    align-self: center;
+    align-content: center;
 
 }
 
