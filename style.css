@@ -379,7 +379,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -495,7 +495,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -619,7 +619,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -770,7 +770,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -916,7 +916,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -1051,7 +1051,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -1171,7 +1171,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -1300,7 +1300,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -1419,7 +1419,7 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
@@ -1539,11 +1539,11 @@ footer{
     }
 
     header{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     nav ul{
-       position: absolute;
+       
         right: 0;
         height: 92vh;
         top: 8vh;
