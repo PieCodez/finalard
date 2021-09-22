@@ -283,7 +283,7 @@ button.accordian:hover, button.accordian.is-open{
     border-left: 0px solid whitesmoke;
     border-right: 0px solid whitesmoke;
     max-height: 0;
-    overflow: hidden;
+    overflow: visible;
     transition: max-height 0.2s ease-in-out;
     font-size: 1.3rem;
     color: white;
@@ -389,7 +389,7 @@ footer{
 
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -629,7 +629,7 @@ footer{
 @media screen and (max-width: 377px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -780,7 +780,7 @@ footer{
 @media screen and (max-width: 361px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -926,7 +926,7 @@ footer{
 @media screen and (max-width: 307px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -1061,7 +1061,7 @@ footer{
 @media screen and (max-width: 1493px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -1181,7 +1181,7 @@ footer{
 @media screen and (max-width: 523px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -1310,7 +1310,7 @@ footer{
 @media screen and (max-width: 1000px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -1429,7 +1429,7 @@ footer{
 @media screen and (max-width: 1000px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
@@ -1549,7 +1549,7 @@ footer{
 @media screen and (max-width: 366px) {
 
     .containerm{
-        overflow-x: hidden;
+        overflow-x: visible;
     }
 
     header{
