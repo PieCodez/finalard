@@ -1,4 +1,5 @@
 *{
+    font-family: 'Nunito', sans-serif; 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,10 +13,8 @@ html {
 
 
 body{
-    font-family: 'Nunito', sans-serif; 
+    
     scroll-behavior: smooth;
-    
-    
 }
 
 
@@ -118,9 +117,13 @@ section{
 #about{
     display: flex;
     flex-direction: row;
-    background-color: rgb(241, 236, 236);
     background: url(./imgs/istockphoto-1177980696-612x612.jpg) no-repeat;
     background-size: cover;
+    background:#212121;
+
+
+
+
     justify-content: center;
     align-items: center;
     scroll-snap-align: start;
@@ -140,8 +143,9 @@ section{
 
 .what , .mission , .service {
     margin: 30px 50px 20px 50px;
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 10px 10px;
+    color: white;
 }
 
 .mission, .how{
@@ -151,12 +155,13 @@ section{
 .jvc{
     padding-left: 40px;
     font-size: 3rem;
+    color: white;
 }
 
 .what h2, .mission h2, .service h2{
     margin-bottom: 40px;
     text-decoration: underline;
-    text-decoration-color: rgb(28, 202, 202);
+    text-decoration-color: white;
     text-decoration-thickness: 3px;
 }
 
@@ -226,11 +231,13 @@ section{
     margin: 50px auto;
 }
 
-#faqs{
-    background: url(./imgs/background-clean.jpg);
+#faqs{  
     display: flex;
     justify-content: center;
     align-content: center;
+    background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -249,6 +256,7 @@ button.accordian{
     font-size: 18px;
     transition: background-color 0.2s linear;
     font-size: 2rem;
+    color: white;
 }
 
 button.accordian::after{
@@ -278,6 +286,7 @@ button.accordian:hover, button.accordian.is-open{
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;
     font-size: 1.3rem;
+    color: white;
 }
 
   
@@ -286,6 +295,10 @@ button.accordian:hover, button.accordian.is-open{
     background: url(./imgs/white-background-with-black-line.jpg) no-repeat;
     background-size: cover;
     display: flex;
+    background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     justify-content: center;
     align-content: center;
     padding: 20px;
@@ -297,15 +310,16 @@ button.accordian:hover, button.accordian.is-open{
     font-size: 2rem;
     text-decoration: underline;
     text-decoration-thickness: 2px;
-    font-weight: 100;
+    font-weight: 100;color: white;
     
 }
 
 #join p{
-    font-size: larger;
+    font-size: x-large;
     text-align: center;
     padding-top: 50px;
-    font-weight: 300;
+    font-weight: 400;
+    color: white;
 }
 #join a{
     margin-left: 70px;
@@ -315,8 +329,8 @@ button.accordian:hover, button.accordian.is-open{
     padding-right: 0px;
     padding-bottom: 20px;
     text-decoration: none;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     width: 150px;
     align-self: center;
     align-content: center;
@@ -375,11 +389,11 @@ footer{
 
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -491,11 +505,11 @@ footer{
 @media screen and (max-width: 415px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -615,11 +629,11 @@ footer{
 @media screen and (max-width: 377px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -766,11 +780,11 @@ footer{
 @media screen and (max-width: 361px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -912,11 +926,11 @@ footer{
 @media screen and (max-width: 307px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -1047,11 +1061,11 @@ footer{
 @media screen and (max-width: 1493px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -1167,11 +1181,11 @@ footer{
 @media screen and (max-width: 523px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -1296,11 +1310,11 @@ footer{
 @media screen and (max-width: 1000px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -1415,11 +1429,11 @@ footer{
 @media screen and (max-width: 1000px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
@@ -1535,11 +1549,11 @@ footer{
 @media screen and (max-width: 366px) {
 
     .containerm{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     header{
-        overflow-x: visible;
+        overflow-x: hidden;
     }
 
     nav ul{
