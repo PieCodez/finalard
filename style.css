@@ -283,7 +283,7 @@ button.accordian:hover, button.accordian.is-open{
     border-left: 0px solid whitesmoke;
     border-right: 0px solid whitesmoke;
     max-height: 0;
-    overflow: visible;
+    overflow: hidden;
     transition: max-height 0.2s ease-in-out;
     font-size: 1.3rem;
     color: white;
